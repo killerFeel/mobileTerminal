@@ -1,0 +1,77 @@
+html {
+    font-size: calc(100 * 100vw / 750);
+    letter-spacing: 0;
+    margin: 0;
+    padding: 0;
+    font-family: PingFang, 微软雅黑, PingFang SC;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0.12rem;
+    user-select: none;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+h5 {
+    margin: 0;
+}
+
+em,
+th {
+    font-style: normal;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: top;
+    border: none;
+}
+
+/*清除点击时的高亮颜色*/
+a,
+input,
+button {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*清除ios下的默认圆角*/
+input,
+button {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+input {
+    line-height: normal !important;
+    transform: translateZ(0) !important;
+    -webkit-user-select: text !important;
+    -moz-user-select: text !important;
+    user-select: text !important;
+}
+
+body {
+    margin: 0;
+    -webkit-user-select: none; /*兼容android*/
+}
+
+body * {
+    -webkit-user-select: none; /*选中文字设置*/
+    font-family: helvetica; /*默认字体设置*/
+}
+
+body {
+    -webkit-text-size-adjust: 100%; /*禁止文字缩放*/
+}
