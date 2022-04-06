@@ -1,15 +1,22 @@
 <template>
-    <div>
-        我的首页
+    <div id="mineIndex">
+        <van-search class="my-search" v-model="value" placeholder="请输入搜索关键词"/>
     </div>
 </template>
 
-<script>
-    export default {
-        name: "mineIndex"
-    }
+<script setup>
+    import {Toast} from 'vant';
+    import {ref} from 'vue';
+
+    const value = ref('');
+
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+    #mineIndex {
+         /*.van-search {*/
+            /*background-color: rebeccapurple;*/
+        /*}*/
+    }
 
 </style>
