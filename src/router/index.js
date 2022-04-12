@@ -48,6 +48,11 @@ const routes = [
       },
     ]
   },
+  {
+    path: "/:pathMatch(.*)*",
+    name: "404",
+    component: ()=>import("@/views/lib/404")
+  },
 ];
 
 const router = createRouter({

@@ -7,6 +7,7 @@
 
 <script setup>
     import {ref} from "vue";
+    import api from "@/fetch/test/api";
     const date = ref('');
     const show = ref(false);
 
@@ -15,6 +16,11 @@
         show.value = false;
         date.value = formatDate(value);
     };
+    // 示例测试api
+
+    api.getListAPI().then((res) => {
+
+    })
 </script>
 
 <style scoped>

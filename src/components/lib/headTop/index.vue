@@ -18,8 +18,8 @@ export default {
   name: "index",
   props: ["navData"],
   setup(props, ctx) {
-    const Route = useRoute(); //获取到值
-    const Router = useRouter(); //获取到值
+    const Route = useRoute();
+    const Router = useRouter();
     const state = reactive({
       navData: props.navData,
       title: Route.meta["title"] || "",
